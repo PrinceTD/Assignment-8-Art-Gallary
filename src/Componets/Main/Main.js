@@ -12,6 +12,7 @@ const Main = () => {
             .then(res => res.json())
             .then(data => setCart(data))
     }, [])
+    // button handler
     const addHandle = carts => {
         const newCart = [...shoppingCart, carts];
         setShoppingCart(newCart);
@@ -21,6 +22,7 @@ const Main = () => {
 
     return (
         <div className="">
+            
             <div className="cart-design">
                 <span className="row row-cols-1 row-cols-md-3 g-3 m-5">
                     {

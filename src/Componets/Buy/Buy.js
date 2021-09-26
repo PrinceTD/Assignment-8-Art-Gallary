@@ -2,14 +2,16 @@ import React from 'react';
 import './Buy.css'
 
 const Buy = (props) => {
+
     const { shoppingCart } = props;
     let total = 0;
-
+    
     for (const cart of shoppingCart) {
         total = total + cart.price;
     }
     const shipping = total > 0 ? 15 : 0;
     const tax = (total + shipping) * 0.10;
+    // total sum
     const grandTotal = total + shipping + tax;
 
     return (
@@ -42,6 +44,7 @@ const Buy = (props) => {
                         <button className="buy"><strong><small>Buy Now</small></strong></button>
                 </div>
             </div>
+
         </div>
     );
 };
