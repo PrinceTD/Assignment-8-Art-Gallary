@@ -5,7 +5,7 @@ import './cart.css'
 import Rating from 'react-rating';
 
 const Cart = (props) => {
-    const { name, img, artist, star, painted, price, dimensions} = props.cart;
+    const { name, img, artist, star, painted, price, dimensions } = props.cart;
     const element = <FontAwesomeIcon icon={faShoppingCart} />
     // console.log(props)
     return (
@@ -22,25 +22,22 @@ const Cart = (props) => {
                                         Artist: {artist}
                                     </span>
                                     <br />
-                                    <div>
-                                        <div >
-                                            <span className='d-flex justify-content-between pe-3'>
-                                                <small> Painted: {painted}</small>
-                                                <small className="text-warning"> <Rating
-                                                    initialRating={star}
-                                                    readonly
-                                                    emptySymbol="far fa-star"
-                                                    fullSymbol="fas fa-star"
-                                                /></small>
-                                            </span>
-                                            <span>
-                                                <small>Dimensions: {dimensions}</small><br />
-                                                <small> <strong className='h6'>Price:$ {price}</strong></small>
-                                            </span>
-                                        </div>
+                                    <span>
+                                        <span className='d-flex justify-content-between pe-3'>
+                                            <small> Painted: {painted}</small>
+                                            <small className="text-warning"> <Rating
+                                                initialRating={star}
+                                                readonly
+                                                emptySymbol="far fa-star"
+                                                fullSymbol="fas fa-star"
+                                            /></small>
+                                        </span>
+                                        <span>
+                                            <small>Dimensions: {dimensions}</small><br />
+                                            <small> <strong className='h6'>Price:$ {price}</strong></small>
+                                        </span>
+                                    </span>
 
-
-                                    </div>
                                 </p>
                                 <button onClick={() => props.addHandle(props.cart)} className="btn btn-dark">{element} Add now</button>
                             </div>

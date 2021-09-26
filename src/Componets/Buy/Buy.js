@@ -21,7 +21,6 @@ const Buy = (props) => {
                         <p>Item order: {props.shoppingCart.length}</p>
                     </div>
                     <div>
-
                         <span className="total">
                             <small>Item:</small>
                             <small>$ {total}</small>
