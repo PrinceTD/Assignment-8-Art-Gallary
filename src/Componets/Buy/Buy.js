@@ -14,7 +14,7 @@ const Buy = (props) => {
 
     return (
         <div>
-            <div className='border p-1 position-fixed cart'>
+            <div className='border p-1 cart'>
                 <div className='total-cart'>
                     <div className='cart-details'>
                         <h5><strong>Order Summary</strong></h5>
