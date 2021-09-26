@@ -1,0 +1,13 @@
+.image img{
+    border-radius: 5px;
+}
+.btn{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+};
+.cart-details{
+    display: flex;
+    justify-content: space-between;
+};

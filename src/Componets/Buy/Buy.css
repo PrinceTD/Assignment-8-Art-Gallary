@@ -1,0 +1,32 @@
+.cart{
+    margin-top: 70px;
+    border-radius: 10px;
+}
+.total-cart{
+    padding-left: 15px;
+    padding-right: 10px;
+}
+.cart-details{
+    text-align: center;
+}
+.total{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   
+    
+}
+.total h6{
+    color: red;
+}
+.buy{
+    width: 150px;
+    height: auto;
+    color: white;
+    background-color: rgb(22, 22, 21);
+    border-radius: 5px;
+    border: 1px solid rgb(37, 37, 37);
+}
+.buy:hover{
+  border: 2px solid rgb(65, 64, 64);
+  border-radius: 5px;
+}
