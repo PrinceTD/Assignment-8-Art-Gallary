@@ -13,7 +13,7 @@ const Header = () => {
                 </small>
                 <br />
                 <strong className="h3">
-                    Total Budget: $100000
+                    Total Budget: $10000
                 </strong>
             </span>
         </div>
