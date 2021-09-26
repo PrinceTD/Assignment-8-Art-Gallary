@@ -5,7 +5,7 @@ const Buy = (props) => {
 
     const { shoppingCart } = props;
     let total = 0;
-    
+
     for (const cart of shoppingCart) {
         total = total + cart.price;
     }
@@ -18,11 +18,11 @@ const Buy = (props) => {
         <div>
             <div className='border p-1 cart'>
                 <div className='total-cart'>
-                    <span className='cart-details'>
+                    <div className='cart-details'>
                         <h5><strong>Order Summary</strong></h5>
                         <p>Item order: {props.shoppingCart.length}</p>
-                    </span>
-                    <span>
+                    </div>
+                    <div>
                         <span className="total">
                             <small>Item:</small>
                             <small>$ {total}</small>
@@ -35,13 +35,13 @@ const Buy = (props) => {
                             <small>Tax</small>
                             <small>$ {tax}</small>
                         </span>
-                    </span>
+                    </div>
                     <br />
-                      <span className='total cart-details'>
-                            <h6>Total cost:</h6>
-                            <h6>$ {grandTotal.toFixed(2)}</h6>
-                        </span>
-                        <button className="buy"><strong><small>Buy Now</small></strong></button>
+                    <div className='total cart-details'>
+                        <h6>Total cost:</h6>
+                        <h6>$ {grandTotal.toFixed(2)}</h6>
+                    </div>
+                    <button className="buy"><strong><small>Buy Now</small></strong></button>
                 </div>
             </div>
 

@@ -3,7 +3,7 @@ import React from 'react';
 const Header = () => {
     return (
         <div className="header d-flex justify-content-center text-center bg-dark text-white p-4">
-            <span >
+            <div>
                 <strong className="h4">
                 Decorate the Art Museum
                 </strong>
@@ -15,7 +15,7 @@ const Header = () => {
                 <strong className="h3">
                     Total Budget: $10000
                 </strong>
-            </span>
+            </div>
         </div>
     );
 };

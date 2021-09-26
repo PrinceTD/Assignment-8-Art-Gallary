@@ -16,27 +16,26 @@ const Main = () => {
     const addHandle = carts => {
         const newCart = [...shoppingCart, carts];
         setShoppingCart(newCart);
-        
+
 
     }
 
     return (
-        <div className="">
-            
-            <div className="cart-design">
-                <span className="row row-cols-1 row-cols-md-3 g-3 m-5">
+
+        <div className="row">
+            <div className="col-md-10">
+                <div className="row row-cols-1 row-cols-md-3 g-3 m-4 p-2">
                     {
                         cart.map(cart => <Cart
                             cart={cart}
                             addHandle={addHandle}></Cart>)
 
                     }
-                </span>
-                <span>
-                <Buy shoppingCart={shoppingCart}></Buy>
-                </span>
+                </div>
             </div>
-           
+            <div className="col-md-2">
+                <Buy shoppingCart={shoppingCart}></Buy>
+            </div>
         </div>
     );
 };
