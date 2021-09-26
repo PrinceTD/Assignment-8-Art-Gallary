@@ -30,7 +30,7 @@ const Cart = (props) => {
                                                 readonly
                                                 emptySymbol="far fa-star"
                                                 fullSymbol="fas fa-star"
-                                            /></small>
+                                            /> ({star})</small>
                                         </span>
                                         <span>
                                             <small>Dimensions: {dimensions}</small><br />
