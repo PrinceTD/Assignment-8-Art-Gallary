@@ -16,11 +16,11 @@ const Buy = (props) => {
         <div>
             <div className='border p-1 cart'>
                 <div className='total-cart'>
-                    <div className='cart-details'>
+                    <span className='cart-details'>
                         <h5><strong>Order Summary</strong></h5>
                         <p>Item order: {props.shoppingCart.length}</p>
-                    </div>
-                    <div>
+                    </span>
+                    <span>
                         <span className="total">
                             <small>Item:</small>
                             <small>$ {total}</small>
@@ -33,16 +33,16 @@ const Buy = (props) => {
                             <small>Tax</small>
                             <small>$ {tax}</small>
                         </span>
-                    </div>
+                    </span>
                     <br />
-                    <div className="cart-details">
+                    <span className="cart-details">
 
                         <span className='total'>
                             <h6>Total cost:</h6>
                             <h6>$ {grandTotal.toFixed(2)}</h6>
                         </span>
                         <button className="buy"><strong><small>Buy Now</small></strong></button>
-                    </div>
+                    </span>
                 </div>
             </div>
         </div>
