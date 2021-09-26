@@ -20,8 +20,8 @@ const Main = () => {
     }
 
     return (
-        <div className="cart-design">
-            <div className="container-fluid">
+        <div className="">
+            <div className="cart-design">
                 <span className="row row-cols-1 row-cols-md-3 g-3 m-5">
                     {
                         cart.map(cart => <Cart
@@ -30,10 +30,11 @@ const Main = () => {
 
                     }
                 </span>
-            </div>
-            <div>
+                <span>
                 <Buy shoppingCart={shoppingCart}></Buy>
+                </span>
             </div>
+           
         </div>
     );
 };
