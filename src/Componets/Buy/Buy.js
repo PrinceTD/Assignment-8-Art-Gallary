@@ -35,14 +35,11 @@ const Buy = (props) => {
                         </span>
                     </span>
                     <br />
-                    <span className="cart-details">
-
-                        <span className='total'>
+                      <span className='total cart-details'>
                             <h6>Total cost:</h6>
                             <h6>$ {grandTotal.toFixed(2)}</h6>
                         </span>
                         <button className="buy"><strong><small>Buy Now</small></strong></button>
-                    </span>
                 </div>
             </div>
         </div>
