@@ -1,5 +1,4 @@
-# The-superhero-direction-PrinceTD
-
+# Art-gallery-princetd
 This is my website link: (https://art-gallery-princetd.netlify.app/).
 
 ## Features:
