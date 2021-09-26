@@ -22,7 +22,7 @@ const Main = () => {
     return (
         <div className="cart-design">
             <div className="container-fluid">
-                <div class="row row-cols-1 row-cols-md-3 g-3 m-5">
+                <div className="row row-cols-1 row-cols-md-3 g-3 m-5">
                     {
                         cart.map(cart => <Cart
                             cart={cart}

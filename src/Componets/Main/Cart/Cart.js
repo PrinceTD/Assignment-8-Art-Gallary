@@ -5,19 +5,19 @@ import './cart.css'
 import Rating from 'react-rating';
 
 const Cart = (props) => {
-    const { name, img, artist, star, painted, price } = props.cart;
+    const { name, img, artist, star, painted, price, dimensions} = props.cart;
     const element = <FontAwesomeIcon icon={faShoppingCart} />
     // console.log(props)
     return (
         <div>
             <div>
                 <div className="background-clr">
-                    <div class="col">
-                        <div class="card rounded ">
-                            <div class="card-body image">
+                    <div className="col">
+                        <div className="card rounded h-100 ">
+                            <div className="card-body image">
                                 <img src={img} alt="" height='300px' width="300px" />
-                                <h5 class="card-title">{name}</h5>
-                                <p class="card-text">
+                                <h5 className="card-title">{name}</h5>
+                                <p className="card-text">
                                     <span>
                                         Artist: {artist}
                                     </span>
@@ -34,6 +34,7 @@ const Cart = (props) => {
                                                 /></small>
                                             </span>
                                             <span>
+                                                <small>Dimensions: {dimensions}</small><br />
                                                 <small> <strong className='h6'>Price:$ {price}</strong></small>
                                             </span>
                                         </div>
